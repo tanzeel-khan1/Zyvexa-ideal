@@ -17,7 +17,11 @@ const benefits = [
           strokeLinecap="round"
           strokeLinejoin="round"
         />
-        <path d="M20 12a8 8 0 1 1-16 0 8 8 0 0 1 16 0Z" stroke="currentColor" strokeWidth="2" />
+        <path
+          d="M20 12a8 8 0 1 1-16 0 8 8 0 0 1 16 0Z"
+          stroke="currentColor"
+          strokeWidth="2"
+        />
       </svg>
     ),
   },
@@ -40,7 +44,12 @@ const benefits = [
     desc: "One workflow from request to completion.",
     glyph: (
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-        <path d="M7 7h10M7 12h10M7 17h10" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+        <path
+          d="M7 7h10M7 12h10M7 17h10"
+          stroke="currentColor"
+          strokeWidth="2"
+          strokeLinecap="round"
+        />
         <path
           d="M4 5a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V5Z"
           stroke="currentColor"
@@ -61,7 +70,11 @@ const benefits = [
           strokeWidth="2"
           strokeLinejoin="round"
         />
-        <path d="M12 10.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z" stroke="currentColor" strokeWidth="2" />
+        <path
+          d="M12 10.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"
+          stroke="currentColor"
+          strokeWidth="2"
+        />
       </svg>
     ),
   },
@@ -69,7 +82,10 @@ const benefits = [
 
 export default function WhyChooseUs() {
   return (
-    <section id="why" className="relative overflow-hidden bg-[#220326] py-16 text-white sm:py-20">
+    <section
+      id="why"
+      className="relative overflow-hidden bg-[#220326] py-16 text-white sm:py-20"
+    >
       <div className="pointer-events-none absolute inset-0">
         <div className="absolute left-[-160px] top-[-160px] h-[420px] w-[420px] rounded-full bg-[#E7DDF2]/18 blur-3xl" />
         <div className="absolute bottom-[-200px] right-[-200px] h-[520px] w-[520px] rounded-full bg-[#A855F7]/18 blur-3xl" />
@@ -84,15 +100,21 @@ export default function WhyChooseUs() {
           />
         </Reveal>
 
-        <div className="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4 items-stretch">
           {benefits.map((b, idx) => (
             <Reveal key={b.title} delayMs={80 * idx}>
-              <GlassCard>
+              <GlassCard className="h-full flex flex-col">
                 <div className="flex items-center gap-3">
                   <Icon>{b.glyph}</Icon>
-                  <h3 className="text-lg font-semibold tracking-tight text-white">{b.title}</h3>
+
+                  <h3 className="text-lg font-semibold tracking-tight text-white">
+                    {b.title}
+                  </h3>
                 </div>
-                <p className="mt-3 text-sm leading-relaxed text-white/70">{b.desc}</p>
+
+                <p className="mt-3 text-sm leading-relaxed text-white/70">
+                  {b.desc}
+                </p>
               </GlassCard>
             </Reveal>
           ))}
@@ -101,4 +123,3 @@ export default function WhyChooseUs() {
     </section>
   );
 }
-

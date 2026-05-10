@@ -8,7 +8,10 @@ export default defineConfig({
   plugins: [
     react(),
     tailwindcss(),
-
     babel({ presets: [reactCompilerPreset()] }),
   ],
+
+  server: {
+    port: 5000,
+  },
 });

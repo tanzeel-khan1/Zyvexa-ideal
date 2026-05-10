@@ -75,21 +75,27 @@ export default function HowItWorks() {
           description="Zyvexa keeps it clean: request, get accepted by a nearby provider, chat in real-time, and mark the job complete."
         />
 
-        <div className="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
-          {steps.map((s, idx) => (
-            <Reveal key={s.title} delayMs={80 * idx}>
-              <div className="rounded-3xl border border-[#220326]/10 bg-white/60 p-5 shadow-sm backdrop-blur-xl transition duration-300 hover:-translate-y-1 hover:bg-white/75 hover:shadow-md">
-                <div className="flex items-center gap-3">
-                  <span className="inline-flex h-11 w-11 items-center justify-center rounded-2xl bg-linear-to-br from-[#3B0A45] to-[#220326] text-white shadow-sm transition duration-300 group-hover:scale-[1.02]">
-                    {s.icon}
-                  </span>
-                  <h3 className="text-lg font-semibold tracking-tight text-[#220326]">{s.title}</h3>
-                </div>
-                <p className="mt-3 text-sm leading-relaxed text-[#220326]/70">{s.desc}</p>
-              </div>
-            </Reveal>
-          ))}
+       <div className="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4 items-stretch">
+  {steps.map((s, idx) => (
+    <Reveal key={s.title} delayMs={80 * idx}>
+      <div className="h-full rounded-3xl border border-[#220326]/10 bg-white/60 p-5 shadow-sm backdrop-blur-xl transition duration-300 hover:-translate-y-1 hover:bg-white/75 hover:shadow-md flex flex-col">
+        <div className="flex items-center gap-3">
+          <span className="inline-flex h-11 w-11 items-center justify-center rounded-2xl bg-linear-to-br from-[#3B0A45] to-[#220326] text-white shadow-sm transition duration-300">
+            {s.icon}
+          </span>
+
+          <h3 className="text-lg font-semibold tracking-tight text-[#220326]">
+            {s.title}
+          </h3>
         </div>
+
+        <p className="mt-3 text-sm leading-relaxed text-[#220326]/70">
+          {s.desc}
+        </p>
+      </div>
+    </Reveal>
+  ))}
+</div>
       </div>
     </section>
   );
