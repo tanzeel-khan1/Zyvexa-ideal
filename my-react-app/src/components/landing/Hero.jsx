@@ -12,51 +12,76 @@ export default function Hero() {
         <div className="absolute inset-0 bg-[radial-gradient(1200px_600px_at_50%_-120px,rgba(231,221,242,0.25),transparent_60%),linear-gradient(135deg,#220326_0%,#3B0A45_40%,#220326_100%)]" />
       </div>
 
-      {/* <nav className="relative mx-auto flex max-w-6xl items-center justify-between px-4 py-6 sm:px-6 lg:px-8">
-        <a
-          className="inline-flex items-center gap-2 rounded-2xl px-2 py-1 transition hover:bg-white/5"
-          aria-label="Zyvexa home"
-        >
-          <span className="h-9 w-9 rounded-2xl bg-white/10 ring-1 ring-white/20 backdrop-blur-md" />
-          <span className="text-lg font-semibold tracking-tight">Zyvexa</span>
-        </a>
+    <nav className="relative mx-auto flex max-w-7xl items-center justify-between px-4 py-5 sm:px-6 lg:px-8">
 
-        <div className="hidden items-center gap-2 sm:flex">
-          <a
-            href="#how"
-            className="rounded-xl px-3 py-2 text-sm font-medium text-white/80 transition hover:text-white hover:bg-white/5"
-          >
-            How it works          </a>
-          <a
-            href="#services"
-            className="rounded-xl px-3 py-2 text-sm font-medium text-white/80 transition hover:text-white hover:bg-white/5"
-          >
-            Services
-          </a>
-          <a
-            href="#why"
-            className="rounded-xl px-3 py-2 text-sm font-medium text-white/80 transition hover:text-white hover:bg-white/5"
-          >
-            Why Zyvexa
-          </a>
-        </div>
+  {/* Logo */}
+  <a
+    className="group inline-flex items-center gap-3 rounded-2xl px-2 py-2 transition-all duration-300 "
+    aria-label="Zyvexa home"
+  >
+    <div className="relative ml-0  md:ml-20">
+      <div className="absolute ml-20 inset-0 rounded-2xl  blur-lg opacity-0 transition duration-300 group-hover:opacity-100"></div>
 
-        <div className="flex items-center gap-2">
-          <Link
-            to="/request"
-            className="hidden rounded-2xl border border-white/15 bg-white/10 px-4 py-2 text-sm font-semibold text-white shadow-sm backdrop-blur-md transition hover:bg-white/15 sm:inline-flex"
-          >
-            Request a Service
-          </Link>
-          <Link
-            to="/coming-soon"
-            className="inline-flex rounded-2xl bg-white px-4 py-2 text-sm font-semibold text-[#220326] shadow-sm transition hover:-translate-y-px hover:shadow-md"
-          >
-            Coming Soon
-          </Link>
-        </div>
-      </nav> */}
-<nav className="relative mx-auto flex max-w-6xl items-center justify-between px-4 py-6 sm:px-6 lg:px-8">
+      <img
+        src="/zlogo.png"
+        alt="Zyvexa Logo"
+        className="relative h-11 w-11 rounded-2xl object-cover ring-1 ring-white/10 transition duration-300 group-hover:scale-105"
+      />
+    </div>
+
+    <div className="flex flex-col leading-tight">
+      <span className="text-xl font-bold tracking-tight text-white">
+        Zyvexa
+      </span>
+
+     
+    </div>
+  </a>
+
+  {/* Nav Links */}
+  <div className="hidden items-center gap-2 rounded-2xl border border-white/10 bg-white/[0.03] p-2 backdrop-blur-xl sm:flex">
+
+    <a
+      href="#how"
+      className="rounded-xl px-4 py-2 text-sm font-medium text-white/70 transition-all duration-300 hover:bg-white/5 hover:text-white"
+    >
+      How it works
+    </a>
+
+    <a
+      href="#services"
+      className="rounded-xl px-4 py-2 text-sm font-medium text-white/70 transition-all duration-300 hover:bg-white/5 hover:text-white"
+    >
+      Services
+    </a>
+
+    <a
+      href="#why"
+      className="rounded-xl px-4 py-2 text-sm font-medium text-white/70 transition-all duration-300 hover:bg-white/5 hover:text-white"
+    >
+      Why Zyvexa
+    </a>
+  </div>
+
+  {/* Buttons */}
+  <div className="flex items-center gap-3">
+
+    <Link
+      to="/request"
+      className="hidden rounded-2xl border border-white/10 bg-white/5 px-5 py-2.5 text-sm font-semibold text-white shadow-lg backdrop-blur-md transition-all duration-300 hover:-translate-y-0.5 hover:bg-white/10 sm:inline-flex"
+    >
+      Request a Service
+    </Link>
+
+    <Link
+      to="/coming-soon"
+      className="inline-flex rounded-2xl bg-white px-5 py-2.5 text-sm font-semibold text-[#220326] shadow-xl transition-all duration-300 hover:-translate-y-0.5 hover:shadow-2xl"
+    >
+      Coming Soon
+    </Link>
+  </div>
+</nav> 
+{/* <nav className="relative mx-auto flex max-w-6xl items-center justify-between px-4 py-6 sm:px-6 lg:px-8">
   <a
     className="inline-flex items-center gap-3 rounded-2xl px-2 py-1 transition hover:bg-white/5"
     aria-label="Zyvexa home"
@@ -110,7 +135,7 @@ export default function Hero() {
       Coming Soon
     </Link>
   </div>
-</nav>
+</nav> */}
       <div
         id="top"
         className="relative mx-auto max-w-6xl px-4 pb-16 pt-10 sm:px-6 sm:pb-20 sm:pt-14 lg:px-8 lg:pb-24"
