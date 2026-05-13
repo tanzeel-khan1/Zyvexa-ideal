@@ -84,3 +84,21 @@
     filter: blur(0);
   }
 }
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+
+  background:
+    radial-gradient(
+      1200px 600px at 50% -120px,
+      rgba(231, 221, 242, 0.25),
+      transparent 60%
+    ),
+    linear-gradient(
+      135deg,
+      #220326 0%,
+      #3B0A45 40%,
+      #220326 100%
+    );
+}

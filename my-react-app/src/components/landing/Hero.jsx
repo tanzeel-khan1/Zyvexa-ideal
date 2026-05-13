@@ -5,11 +5,13 @@ import Reveal from "../ui/Reveal";
 
 export default function Hero() {
   return (
-    <header className="relative overflow-hidden bg-[#220326] text-white">
+    <header className="relative overflow-hidden text-white">
       <div className="pointer-events-none absolute inset-0">
         <div className="absolute -top-48 left-1/2 h-[520px] w-[520px] -translate-x-1/2 rounded-full bg-[#A855F7]/25 blur-3xl" />
         <div className="absolute -bottom-56 right-[-180px] h-[520px] w-[520px] rounded-full bg-white/10 blur-3xl" />
-        <div className="absolute inset-0 bg-[radial-gradient(1200px_600px_at_50%_-120px,rgba(231,221,242,0.25),transparent_60%),linear-gradient(135deg,#220326_0%,#3B0A45_40%,#220326_100%)]" />
+        {/* <div className="absolute inset-0 bg-[radial-gradient(1200px_600px_at_50%_-120px,rgba(231,221,242,0.25),transparent_60%),linear-gradient(135deg,#220326_0%,#3B0A45_40%,#220326_100%)]" /> */}
+              <div className="hero-bg" />
+
       </div>
 
     <nav className="relative mx-auto flex max-w-7xl items-center justify-between px-4 py-5 sm:px-6 lg:px-8">
