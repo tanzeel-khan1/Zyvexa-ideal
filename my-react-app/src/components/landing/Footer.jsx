@@ -19,7 +19,7 @@ export default function Footer() {
     },
     {
       name: "YouTube",
-      href: "https://www.youtube.com/@zyvexa-v4b",
+        href: "https://www.youtube.com/@zyvexa-v4b",
       icon: (
         <svg
           viewBox="0 0 24 24"
@@ -62,6 +62,7 @@ export default function Footer() {
     },
     {
       name: "Facebook",
+      href: "https://www.facebook.com/profile.php?id=61589793897300",
       icon: (
         <svg
           viewBox="0 0 24 24"
@@ -97,14 +98,16 @@ export default function Footer() {
 
             <div className="flex items-center gap-2">
               {socials.map((s) => (
-                <a
-                  key={s.name}
-                  href={s.href}
-                  aria-label={s.name}
-                  className="inline-flex items-center justify-center rounded-2xl border border-[#220326]/10 bg-white/70 p-3 text-[#220326] shadow-sm transition hover:-translate-y-px hover:bg-white hover:shadow-md"
-                >
-                  {s.icon}
-                </a>
+               <a
+  key={s.name}
+  href={s.href}
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label={s.name}
+  className="inline-flex items-center justify-center rounded-2xl border border-[#220326]/10 bg-white/70 p-3 text-[#220326] shadow-sm transition hover:-translate-y-px hover:bg-white hover:shadow-md"
+>
+  {s.icon}
+</a>
               ))}
             </div>
           </div>
