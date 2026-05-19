@@ -85,14 +85,13 @@ export default function Footer() {
               <p className="text-lg font-semibold tracking-tight text-[#220326]">
                 Zyvexa
               </p>
-              <p className="mt-1 text-sm text-[#220326]/70">
-                Karachi, Pakistan
-              </p>
+              
               <a
                 className="mt-3 inline-flex text-sm font-semibold text-[#3B0A45] underline decoration-[#3B0A45]/30 underline-offset-4 transition hover:decoration-[#3B0A45]"
                 href="mailto:hello@zyvexa.com"
               >
-                hello@zyvexa.com
+                hello.zyvexa@gmail.com
+
               </a>
             </div>
 
