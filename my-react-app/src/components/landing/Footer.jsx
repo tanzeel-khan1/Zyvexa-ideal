@@ -91,7 +91,6 @@ export default function Footer() {
                 href="mailto:hello@zyvexa.com"
               >
                 hello.zyvexa@gmail.com
-
               </a>
             </div>
 
