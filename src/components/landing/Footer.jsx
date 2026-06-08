@@ -110,10 +110,6 @@ export default function Footer() {
             </div>
           </div>
         </Reveal>
-
-        <p className="mt-8 text-xs text-[#220326]/60">
-          © {new Date().getFullYear()} Zyvexa. All rights reserved.
-        </p>
       </div>
     </footer>
   );
