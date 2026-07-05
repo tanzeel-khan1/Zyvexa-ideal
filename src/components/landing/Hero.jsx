@@ -23,9 +23,9 @@ export default function Hero() {
             <div className="absolute ml-20 inset-0 rounded-2xl  blur-lg opacity-0 transition duration-300 group-hover:opacity-100"></div>
 
             <img
-              src="/zlogo.png"
+              src="/new logosz.png"
               alt="Zyvexa Logo"
-              className="relative h-11 w-11 rounded-2xl object-cover ring-1 ring-white/10 transition duration-300 group-hover:scale-105"
+              className="relative h-11 w-11 bg-white rounded-2xl object-cover ring-1 ring-white/10 transition duration-300 group-hover:scale-105"
             />
           </div>
 
