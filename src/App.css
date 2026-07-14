@@ -182,8 +182,6 @@
     border-right-color: var(--border);
   }
 }
-
-
 .hero-bg {
   position: absolute;
   inset: 0;
