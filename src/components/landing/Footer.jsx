@@ -19,7 +19,7 @@ export default function Footer() {
     },
     {
       name: "YouTube",
-        href: "https://www.youtube.com/@zyvexa-v4b",
+      href: "https://www.youtube.com/@zyvexa-v4b",
       icon: (
         <svg
           viewBox="0 0 24 24"
@@ -85,27 +85,33 @@ export default function Footer() {
               <p className="text-lg font-semibold tracking-tight text-[#220326]">
                 Zyvexa
               </p>
-              
+
               <a
                 className="mt-3 inline-flex text-sm font-semibold text-[#3B0A45] underline decoration-[#3B0A45]/30 underline-offset-4 transition hover:decoration-[#3B0A45]"
                 href="mailto:hello@zyvexa.com"
               >
                 hello.zyvexa@gmail.com
               </a>
-            </div>
+<p className="border-t border-gray-200 dark:border-gray-800 py-5 text-center text-sm text-gray-500">
+  © {new Date().getFullYear()}{" "}
+  <span className="font-bold text-[#3B0A45]">
+    Zyvexa
+  </span>
+  . All rights reserved.
+</p>            </div>
 
             <div className="flex items-center gap-2">
               {socials.map((s) => (
-               <a
-  key={s.name}
-  href={s.href}
-  target="_blank"
-  rel="noopener noreferrer"
-  aria-label={s.name}
-  className="inline-flex items-center justify-center rounded-2xl border border-[#220326]/10 bg-white/70 p-3 text-[#220326] shadow-sm transition hover:-translate-y-px hover:bg-white hover:shadow-md"
->
-  {s.icon}
-</a>
+                <a
+                  key={s.name}
+                  href={s.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={s.name}
+                  className="inline-flex items-center justify-center rounded-2xl border border-[#220326]/10 bg-white/70 p-3 text-[#220326] shadow-sm transition hover:-translate-y-px hover:bg-white hover:shadow-md"
+                >
+                  {s.icon}
+                </a>
               ))}
             </div>
           </div>
